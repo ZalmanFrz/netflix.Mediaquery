@@ -1,0 +1,545 @@
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+}
+.container .bg {
+    width: 100%;
+    height: 80vh;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./assets/header-image.png) ;
+    background-size: cover;
+    background-position: center;
+                
+}
+.container .bg .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+.container .bg .nav .logo > img {
+    margin-left: -100px;
+    width: 200px;
+    height: 40px;
+}
+.container .bg .nav .form {
+    margin-right: -100px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.container .bg .nav .form > button > a{
+    text-decoration: none;
+    color: white
+}
+.container .bg .nav .form .toggler {
+    text-align: center;
+    font-size: 16px;
+    width: 130px;
+    height: 30px;
+    background: transparent;
+    border: 1.5px solid #5e5f5f;
+    border-radius: 4px;
+    cursor: alias;
+
+}
+.container .bg .nav .form >button {
+    width: 80px;
+    height: 30px;
+    background-color: #c51018;
+    border: 1.5px solid #c51018;
+    border-radius: 4px;
+}
+.main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 1px;
+    
+}
+.main-text  h1 {
+    font-size: 50px;
+}
+.main-text >p {
+    font-size: 20px;
+}
+.container .bg .form-b {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    height: 50px;
+}
+.container .bg .form-b >input {
+    width: 400px;
+    background-color: #131212;
+    border: 1.5px solid #636260;
+    text-align: left;
+    font-size: 20px;
+    border-radius: 4px;
+}
+.container .bg .form-b > button {
+    width: 200px;
+    background-color: #c51018;
+    color: white;
+    font-size: 25px;
+    border: #c51018;
+    border-radius: 4px;
+}
+.footer-a {
+    background-color: gray;
+    width: 100%;
+    height: 10px;
+    clear: both;
+    opacity: 60%;
+}
+
+
+@media only screen and (max-width:576px) {
+    .container .bg .nav .logo > img {
+    margin: 0;    
+    width: 100px;
+    height: 30px;
+}
+.container .bg .nav .form >button {
+    width: 80px;
+    height: 30px;
+    background-color: #c51018;
+    border: 1.5px solid #c51018;
+    border-radius: 4px;
+}
+.container .bg .nav .form .toggler {
+    text-align: center;
+    font-size: 12px;
+    width: 60px;
+    height: 30px;
+    background: transparent;
+    border: 1.5px solid #5e5f5f;
+    border-radius: 4px;
+    cursor: alias;
+
+}
+.container .bg .nav .form {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.container .bg .form-b {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    height: 50px;
+}
+.container .bg .form-b >input {
+    width: 150px;
+    background-color: #131212;
+    border: 1.5px solid #636260;
+    text-align: left;
+    font-size: 15px;
+    border-radius: 4px;
+}
+.container .bg .form-b > button {
+    width: 100px;
+    background-color: #c51018;
+    color: white;
+    font-size: 15px;
+    border: #c51018;
+    border-radius: 4px;
+}
+}
+
+
+.container-b .bg {
+    background: black;
+    width: 100%;
+    height: 70vh;
+}
+.container-b .bg .cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.thumb > img {
+    width: 500px;
+    height: 400px;
+}
+.container-b .bg .cont .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    color: white;
+    font-size: 1.5rem;
+}
+.footer-b {
+    background-color: gray;
+    opacity: 70%;
+    width: 100%;
+    height: 10px;
+    clear: both;
+}
+
+
+@media only screen and (max-width:576px) {
+
+.container-b .bg .cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.thumb > img {
+    width: 300px;
+    height: 200px;
+}  
+.container-b .bg .cont .text {
+    max-width: 500px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 40px;
+}
+}
+
+
+.container-c .bg {
+    background: black;
+    width: 100%;
+    height: 70vh;
+}
+.container-c .bg .cont {
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.thumb > img {
+    width: 500px;
+    height: 400px;
+}
+.container-c .bg .cont .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    color: white;
+    font-size: 1.5rem;
+}
+.footer-c {
+    background-color: gray;
+    opacity: 70%;
+    width: 100%;
+    height: 10px;
+    clear: both;
+}
+
+@media only screen and (max-width:576px) {
+    .container-c .bg .cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.thumb > img {
+    width: 300px;
+    height: 200px;
+}  
+.container-c .bg .cont .text {
+    max-width: 250px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 40px;
+}
+}
+
+.container-d .bg {
+    background: black;
+    width: 100%;
+    height: 70vh;
+}
+.container-d .bg .cont {
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.thumb > img {
+    width: 500px;
+    height: 400px;
+}
+.container-d .bg .cont .text {
+    max-width: 500px;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-d {
+    background-color: gray;
+    opacity: 70%;
+    width: 100%;
+    height: 10px;
+    clear: both;
+}
+
+
+@media only screen and (max-width:576px) {
+    .container-d .bg .cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.thumb > img {
+    width: 300px;
+    height: 200px;
+}  
+.container-d .bg .cont .text {
+    max-width: 250px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 40px;
+}
+}
+
+
+.container-e .bg {
+    background: black;
+    width: 100%;
+    height: 70vh;
+}
+.container-e .bg .cont {
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.thumb > img {
+    width: 500px;
+    height: 400px;
+}
+.container-e .bg .cont .text {
+    max-width: 500px;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-e {
+    background-color: gray;
+    opacity: 70%;
+    width: 100%;
+    height: 10px;
+    clear: both;
+}
+@media only screen and (max-width:576px) {
+    .container-e .bg .cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.thumb > img {
+    width: 300px;
+    height: 200px;
+}  
+.container-e .bg .cont .text {
+    max-width: 250px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 40px;
+}
+}
+
+.container-f .bg {
+    background: black;
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container-f .bg .text {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.footer-f {
+    background-color: gray;
+    opacity: 70%;
+    width: 100%;
+    height: 10px;
+}
+.container-f .bg >ul {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.accordion {
+margin: 60px auto;
+width: 100%;
+max-width: 750px;
+}
+.accordion li {
+list-style: none;
+width: 100%;
+padding: 5px;
+}
+.accordion li label {
+display: flex;
+align-items: center;
+padding: 20px;
+font-size: 18px;
+font-weight: 500;
+background: #303030;
+margin-bottom: 2px;
+cursor: pointer;
+position: relative;
+}
+label {
+color: white;
+}
+label::after {
+color: white;
+content: '+';
+font-size: 34px;
+position: absolute;
+right: 20px;
+transition: transform 0.5s;
+}
+input[type="radio"]{
+display: none;
+}
+
+
+
+@media only screen and (max-width:576px) {
+.container-f .bg .text {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+}
+
+
+
+.container-f .bg .form-b {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    height: 50px;
+}
+.container-f .bg .form-b >input {
+    width: 400px;
+    background-color: #131212;
+    border: 1.5px solid #636260;
+    text-align: left;
+    font-size: 20px;
+    border-radius: 4px;
+}
+.container-f .bg .form-b > button {
+    width: 200px;
+    background-color: #c51018;
+    color: white;
+    font-size: 25px;
+    border: #c51018;
+    border-radius: 4px;
+}
+
+
+@media only screen and (max-width:576px) {
+    .container-f .bg .form-b {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    height: 50px;
+}
+.container-f .bg .form-b >input {
+    width: 100px;
+    background-color: #131212;
+    border: 1.5px solid #636260;
+    text-align: left;
+    font-size: 15px;
+    border-radius: 4px;
+}
+.container-f .bg .form-b > button {
+    width: 150px;
+    background-color: #c51018;
+    color: white;
+    font-size: 15px;
+    border: #c51018;
+    border-radius: 4px;
+}
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+padding: 50px 15% 10px;
+border-top: 6px solid #333;
+color: #777;
+}
+.footer h2 {
+font-size: 18px;
+font-weight: 400;
+margin-bottom: 30px;
+}
+.footer .col {
+flex-basis: 25%;
+flex-grow: 1;
+margin-bottom: 20px;
+}
+.footer .col a {
+display: block;
+text-decoration: none;
+color: #777;
+font-size: 14px;
+margin-bottom: 10px;
+}
+.footer .row {
+align-items: flex-start;
+padding: 10px 0;
+}
+.footer .language-btn {
+color: #fff;
+padding: 10px 20px;
+border: 3px;
+background-color: #000;
+}
+.footer .language-btn img {
+width: 10px;
+margin-left: 10px;
+}
+
+</style>
